@@ -2,6 +2,7 @@
 #define VALVEDESIGNCALCULATOR_H
 
 #include <QMainWindow>
+#include <QFileDialog>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class ValveDesignCalculator; }
@@ -14,6 +15,15 @@ class ValveDesignCalculator : public QMainWindow
 public:
     ValveDesignCalculator(QWidget *parent = nullptr);
     ~ValveDesignCalculator();
+
+private slots:
+    void on_actionExit_triggered();
+
+    void on_actionPrint_triggered();
+
+    void on_actionLoad_Model_triggered();
+
+    void on_actionLoad_Measurement_triggered();
 
 private:
     Ui::ValveDesignCalculator *ui;
