@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+*.dll
+*.~vsdx
+debug/
+release/
+.vs/
